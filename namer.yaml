@@ -1,0 +1,38 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: namer
+  namespace: default
+  labels:
+    component: namer
+spec:
+  replicas: 1
+  revisionHistoryLimit: 1
+  minReadySeconds: 5
+  selector:
+    matchLabels:
+      component: namer
+  template:
+    metadata:
+      labels:
+        component: namer
+    spec:
+      containers:
+      - name: server-namer
+        image: 589318761596.dkr.ecr.us-east-1.amazonaws.com/server-namer:df17cb7
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: namer
+  labels:
+    component: namer
+spec:
+  selector:
+    component: namer
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
+    protocol: TCP
+  type: "LoadBalancer"
