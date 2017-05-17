@@ -124,7 +124,7 @@ if __name__ == "__main__":
 			'debug': True
 		})
 
-	app.listen(8000, **{
+	app.listen(80, **{
 			'xheaders': True,
 	})
 
