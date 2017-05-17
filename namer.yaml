@@ -18,8 +18,8 @@ spec:
         component: namer
     spec:
       containers:
-      - name: server-namer
-        image: 589318761596.dkr.ecr.us-east-1.amazonaws.com/server-namer:df17cb7
+      - name: server-name
+        image: 589318761596.dkr.ecr.us-east-1.amazonaws.com/server-name:latest
 ---
 apiVersion: v1
 kind: Service
