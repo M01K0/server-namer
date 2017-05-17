@@ -83,7 +83,7 @@ class InMemoryUpdate(JsonWriter):
 		existing = self._get(id)
 		try:
 			global store
-			del store[id]
+			del store[int(id)]
 		except KeyError:
 			pass
 		self._write(existing)
