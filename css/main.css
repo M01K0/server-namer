@@ -1,0 +1,11 @@
+body {
+  background-color: #F44336;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+div, p, span {
+  font-family: 'Roboto Mono', monospace;
+}
