@@ -1,0 +1,29 @@
+{
+  "name": "server-namer",
+  "version": "1.0.0",
+  "description": "An open ended project for visualizing Parsec Servers.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parsec-cloud/server-namer.git"
+  },
+  "author": "paul christophe @captDaylight <paul@neondaylight.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parsec-cloud/server-namer/issues"
+  },
+  "homepage": "https://github.com/parsec-cloud/server-namer#readme",
+  "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "path": "^0.12.7",
+    "react": "^15.5.4",
+    "webpack": "^2.6.1"
+  }
+}
