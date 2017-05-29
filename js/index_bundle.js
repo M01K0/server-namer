@@ -9560,16 +9560,59 @@ var App = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { className: 'container' },
+        { className: 'app' },
         _react2.default.createElement(
-          'h1',
+          'header',
           null,
-          'PARSEC'
+          _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            _react2.default.createElement(
+              'h2',
+              null,
+              'PARSEC'
+            )
+          )
         ),
         _react2.default.createElement(
-          'p',
-          null,
-          'hi world'
+          'div',
+          { className: 'main-body' },
+          _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            _react2.default.createElement(
+              'ul',
+              { className: 'server-list' },
+              _react2.default.createElement(
+                'li',
+                { className: 'server-item' },
+                _react2.default.createElement(
+                  'h5',
+                  null,
+                  'Server Name'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'server description'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                { className: 'server-item' },
+                _react2.default.createElement(
+                  'h5',
+                  null,
+                  'Server Name'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'server description'
+                )
+              )
+            )
+          )
         )
       );
     }

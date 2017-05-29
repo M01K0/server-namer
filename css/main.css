@@ -9,3 +9,34 @@ h1, h2, h3, h4, h5 {
 div, p, span {
   font-family: 'Roboto Mono', monospace;
 }
+
+ul {
+  list-style: none;
+}
+
+header {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+header .container {
+  border-bottom: 1px solid black;
+}
+
+header h2 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.server-list h5, .server-list p {
+  margin-bottom: 0px;
+}
+
+.server-item {
+  padding: 10px;
+  margin: 0px;
+}
+
+.server-item:hover {
+  background-color: #E53935;
+}
