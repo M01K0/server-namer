@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom'
+import CreateServer from './CreateServer'
+import ServerList from './ServerList'
 
 class App extends Component {
   render() {
@@ -12,17 +14,8 @@ class App extends Component {
         </header>
         <div className="main-body">
           <div className="container">
-            <ul className="server-list">
-              <li className="server-item">
-                <h5>Server Name</h5>
-                <p>server description</p>
-              </li>
-
-              <li className="server-item">
-                <h5>Server Name</h5>
-                <p>server description</p>
-              </li>
-            </ul>
+            <CreateServer />
+            <ServerList />
           </div>
         </div>
       </div>

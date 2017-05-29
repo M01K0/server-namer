@@ -28,6 +28,20 @@ header h2 {
   margin-right: 10px;
 }
 
+button {
+  background-color: #C62828;
+  border-radius: 5px;
+  color: #FFEBEE;
+  font-family: 'Rubik Mono One', sans-serif;
+  border: none;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background-color: #B71C1C;
+  color: white;
+}
+
 .server-list h5, .server-list p {
   margin-bottom: 0px;
 }
@@ -35,6 +49,7 @@ header h2 {
 .server-item {
   padding: 10px;
   margin: 0px;
+  transition: all 0.25s ease;
 }
 
 .server-item:hover {
