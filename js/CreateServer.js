@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
 
+const descriptors = ['gaming', 'cloud', 'parsec', 'testing', 'screen', 'wifi', 'stream', 'keyboard', 'connection', 'aws', 'azure']
+const getRanWord = () => descriptors[Math.floor(Math.random() * descriptors.length)]
+const getRanDescription = (num, description = '') => {
+  if (num === 0) return description
+  return getRanDescription(num - 1, `${description} ${getRanWord()}`)
+}
+
 class CreateServer extends Component {
   constructor() {
     super()
@@ -44,6 +51,7 @@ class CreateServer extends Component {
       method: 'post',
       body: JSON.stringify({
         name: this.state.value,
+        description: getRanDescription(Math.floor(Math.random() * 10))
       }),
       headers: new Headers({
         'Content-Type': 'application/json'

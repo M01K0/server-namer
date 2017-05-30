@@ -31,7 +31,7 @@ class ServerList extends Component {
               <li className="server-item flex space-between" key={server.id}>
                 <div>
                   <h5>{server.name}</h5>
-                  <p>server description</p>
+                  <p>{server.description}</p>
                 </div>
                 <div>
                   <button onClick={() => this.deleteServer(server.id)}>delete</button>
