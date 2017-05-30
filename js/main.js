@@ -44,7 +44,7 @@ class App extends Component {
         <div className="main-body">
           <div className="container">
             <CreateServer refreshData={this.refreshData} />
-            <ServerList servers={servers} />
+            <ServerList servers={servers} refreshData={this.refreshData} />
           </div>
         </div>
       </div>

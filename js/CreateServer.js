@@ -29,12 +29,12 @@ class CreateServer extends Component {
         })
       })
       .catch(function(err) {
-        console.log('err', err);
-      });
+        console.log('err', err)
+      })
   }
 
   handleInput(event) {
-    this.setState({ value: event.target.value });
+    this.setState({ value: event.target.value })
   }
 
   addNewName(event) {
@@ -55,7 +55,7 @@ class CreateServer extends Component {
       })
       .catch(function(err) {
         console.log('err', err)
-      });
+      })
   }
 
   render() {
