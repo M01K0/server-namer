@@ -77,6 +77,7 @@ class CreateServer extends Component {
             <div className="flex space-between full-width">
               <form className="flex space-between full-width" onSubmit={this.addNewName}>
                 <input
+                  autoFocus
                   className="full-width margin-right"
                   type="text"
                   value={value}

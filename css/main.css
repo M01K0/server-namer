@@ -1,5 +1,6 @@
 body {
-  background-color: #F44336;
+  background-color: #ECEFF1;
+  color: #283593;
 }
 
 h1, h2, h3, h4, h5 {
@@ -20,7 +21,7 @@ header {
 }
 
 header .container {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #283593;
 }
 
 header h2 {
@@ -29,9 +30,9 @@ header h2 {
 }
 
 button {
-  background-color: #C62828;
+  background-color: #283593;
   border-radius: 5px;
-  color: #FFEBEE;
+  color: #E8EAF6;
   font-family: 'Rubik Mono One', sans-serif;
   border: none;
   transition: all 0.25s ease;
@@ -39,7 +40,7 @@ button {
 }
 
 button:hover {
-  background-color: #B71C1C;
+  background-color: #1A237E;
   color: white;
 }
 
@@ -78,7 +79,7 @@ form {
 }
 
 .server-item:hover {
-  background-color: #E53935;
+  background-color: #CFD8DC;
 }
 
 .create-server {
