@@ -43,7 +43,7 @@ button:hover {
   color: white;
 }
 
-input {
+input, input[type="text"], input[type="text"]:focus {
   border: none;
 }
 
