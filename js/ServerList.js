@@ -20,9 +20,14 @@ class ServerList extends Component {
   render() {
     return (
       <ul className="server-list">
-        <li className="server-item">
-          <h5>Server Name</h5>
-          <p>server description</p>
+        <li className="server-item flex space-between">
+          <div>
+            <h5>Server Name</h5>
+            <p>server description</p>
+          </div>
+          <div>
+            <button>delete</button>
+          </div>
         </li>
 
         <li className="server-item">

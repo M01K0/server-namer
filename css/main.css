@@ -35,11 +35,36 @@ button {
   font-family: 'Rubik Mono One', sans-serif;
   border: none;
   transition: all 0.25s ease;
+  font-size: 14px;
 }
 
 button:hover {
   background-color: #B71C1C;
   color: white;
+}
+
+input {
+  border: none;
+}
+
+form {
+  margin-bottom: 0px;
+}
+
+.margin-right {
+  margin-right: 10px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 .server-list h5, .server-list p {
@@ -54,4 +79,9 @@ button:hover {
 
 .server-item:hover {
   background-color: #E53935;
+}
+
+.create-server {
+  height: 60px;
+  margin: 0px 10px;
 }
