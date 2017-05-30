@@ -44,7 +44,7 @@ class InMemoryUpdate(JsonWriter):
 		else:
 			out = self._get_all()
 
-		self._write(out)
+		self._write(json.dumps(list(out)))
 
 	def post(self, id=None):
 		if id:
