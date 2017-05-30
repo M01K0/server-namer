@@ -50,7 +50,11 @@ A REST endpoint that saves arbitrary JSON data to an in-memory store on the back
 
 ## Javascript
 
-The Javascript that is in place is just there to allow me to test that REST is working correctly, so don't feel tied to it.
+Run npm 6 or up, then:
+`npm install`
+
+Then to generate the js file:
+`npm build`
 
 ## Running
 
