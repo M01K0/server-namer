@@ -1,11 +1,20 @@
 <html>
   <head>
-    <link href="/css/main.css" />
+    <link href="/css/main.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/js/main.js"></script>
   </head>
 
   <body>
-    <p>Hello world</p>
+    <div class="wrapper">
+    	<h1 class="title">Server Namer!</h1>
+    	<div class="create">
+    		<label>Add a server:</label>
+    		<input class="js-name" type="text">
+    		<button class="js-add">Add</button>
+    		<p class="example">Stuck? Try <span class="js-example"></span></p>
+    	</div>
+    	<div class="server-list-wrapper js-server-list"></div>
+    </div>
   </body>
 </html>
